@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+
+:root {
+  --mq-primary-dark: #0a1628;
+  --mq-primary-light: #1e2a44;
+  --mq-gold: #FFD86B;
+  --mq-red: #dc2626;
+  --mq-red-hover: #991b1b;
+  --mq-bg-light: #f4f5f7;
+  --mq-bg-dark: #0a0f1a;
+  --mq-card-light: #ffffff;
+  --mq-card-dark: #1e293b;
+  --mq-text-main: #111827;
+  --mq-text-muted: #6b7280;
+  --mq-border: #e5e7eb;
+  --mq-font: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  --mq-radius-sm: 8px;
+  --mq-radius-md: 12px;
+  --mq-radius-lg: 20px;
+  --mq-shadow-sm: 0 2px 8px rgba(0,0,0,.04);
+  --mq-shadow-md: 0 8px 24px rgba(0,0,0,.08);
+  --mq-shadow-lg: 0 16px 40px rgba(10,22,40,.3);
+}
+
+body.mq-platform {
+  font-family: var(--mq-font) !important;
+  background-color: var(--mq-bg-light);
+  color: var(--mq-text-main);
+  margin: 0; padding: 0; direction: rtl;
+  -webkit-font-smoothing: antialiased;
+}
+body.mq-platform.dark {
+  background-color: var(--mq-bg-dark);
+  color: #e5e7eb;
+}
+body.mq-platform h1, body.mq-platform h2, body.mq-platform h3 {
+  font-weight: 900;
+  color: var(--mq-primary-dark);
+  line-height: 1.4;
+}
+body.mq-platform.dark h1, body.mq-platform.dark h2, body.mq-platform.dark h3 {
+  color: #ffffff;
+}
